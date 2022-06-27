@@ -16,5 +16,6 @@
         height: 9.25rem;
         background: $base-dark;
         position: fixed;
+        z-index: 1000;
     }
 </style>

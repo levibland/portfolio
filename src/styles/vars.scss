@@ -17,3 +17,12 @@ $display-font: 'Fugaz One', sans-serif;
 
 // Transition functions
 $primary-cubic-bezier: cubic-bezier(.175,.885,.32,1.275);
+
+// Mixins
+@mixin offCenter {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
