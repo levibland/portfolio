@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { fly } from 'svelte/transition';
+    //import { fly } from 'svelte/transition';
 
     // Loading animations
     let loading: boolean = true;
@@ -9,7 +9,7 @@
     }, 300);
 </script>
 
-<h1 class="primary-header {loading ? "slide-down" : ""}" in:fly={{ x: -200, duration: 500 }} out:fly={{ x: 200, duration: 500 }}>
+<h1 class="primary-header {loading ? "slide-down" : ""}">
     <span>Hi, I'm</span>
     <span class="pink-text">&nbsp;Levi Bland</span>
 </h1>
