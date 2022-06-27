@@ -2,12 +2,14 @@
     import PrimaryHeader from './PrimaryHeader.svelte';
     import PrimarySub from './PrimarySub.svelte';
     import Button from './Button.svelte';
+    import ScrollIcon from './ScrollIcon.svelte';
 </script>
 
 <main class="about">
     <PrimaryHeader />
     <PrimarySub />
     <Button text="My Portfolio" />
+    <ScrollIcon />
 </main>
 
 <style lang="scss">
