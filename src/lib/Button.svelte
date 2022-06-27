@@ -8,10 +8,15 @@
     setTimeout(() => {
         loading = false;
     }, 350);
+
+    // Scroll animation
+    let y: number;
 </script>
 
+<svelte:window bind:scrollY={y} />
+
 <Link to="/">
-    <div class="button-link {loading ? "slide-up" : ""}">
+    <div class="button-link {loading ? "slide-up" : ""} {y >= 400 ? "rotate-right" : ""}">
         <button class="button-top">{text}</button>
         <button class="button-bottom">{text}</button>
     </div>
@@ -31,7 +36,7 @@
         opacity: 1;
         visibility: visible;
         transform-origin: 50% 100%;
-        transition: all 300ms $primary-cubic-bezier;
+        transition: all 300ms ease-in-out;
 
         * {
             transition: all 150ms;
@@ -57,6 +62,12 @@
             visibility: hidden;
             opacity: 0;
             transform: translateY(4rem);
+        }
+
+        &.rotate-right {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(-5rem);
         }
     }
 

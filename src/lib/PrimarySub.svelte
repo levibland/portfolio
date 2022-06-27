@@ -7,10 +7,16 @@
     setTimeout(() => {
         loading = false;
     }, 300);
+
+    // Scroll animation
+    let y: number;
+    $: console.log(y);
 </script>
 
+<svelte:window bind:scrollY={y} />
+
 <sub class="primary-sub">
-    <div class="line-wrapper {loading ? "slide-left" : ""}">
+    <div class="line-wrapper {loading ? "slide-left" : ""} {y >= 250 ? "slide-right" : ""}">
         <Word text="I'm" />
         <Word text="a" />
         <Word text="software" />
@@ -21,7 +27,7 @@
         <Word text="New" />
         <Word text="Zealand" />
     </div>
-    <div class="line-wrapper {loading ? "slide-right" : ""}">
+    <div class="line-wrapper {loading ? "slide-right" : ""} {y >= 270 ? "slide-left" : ""}">
         <Word text="Get" />
         <Word text="in" />
         <Word text="touch" />

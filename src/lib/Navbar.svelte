@@ -14,7 +14,7 @@
     .navbar {
         width: 100%;
         height: 9.25rem;
-        background: $base-dark;
+        background: transparent;
         position: fixed;
         z-index: 1000;
     }

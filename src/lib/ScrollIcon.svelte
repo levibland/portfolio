@@ -4,9 +4,14 @@
     setTimeout(() => {
         loading = false;
     }, 500);
+
+    // Scroll animation
+    let y: number;
 </script>
 
-<div class="scroll-icon {loading ? "pop-in" : ""}">
+<svelte:window bind:scrollY={y} />
+
+<div class="scroll-icon {loading ? "pop-in" : ""} {y >= 475 ? "pop-out" : ""}">
     <span class="wheel"></span>
 </div>
 
@@ -28,6 +33,12 @@
 
         &.pop-in {
             transform: scale(0);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &.pop-out {
+            transform: scale(1.25);
             visibility: hidden;
             opacity: 0;
         }

@@ -7,9 +7,15 @@
     setTimeout(() => {
         loading = false;
     }, 300);
+
+    // scroll animations
+    let y: number;
+    $: console.log(y);
 </script>
 
-<h1 class="primary-header {loading ? "slide-down" : ""}">
+<svelte:window bind:scrollY={y} />
+
+<h1 class="primary-header {loading ? "slide-down" : ""} {y >= 150 ? "slide-left" : ""}">
     <span>Hi, I'm</span>
     <span class="pink-text">&nbsp;Levi Bland</span>
 </h1>
@@ -25,7 +31,7 @@
         opacity: 1;
         visibility: visible;
         transform-origin: 50% 100%;
-        transition: all 300ms $primary-cubic-bezier;
+        transition: all 300ms ease-in-out;
 
         @media only screen and (max-width: 62.5em) {
             font-size: 8rem;
@@ -46,6 +52,12 @@
             opacity: 0;
             visibility: hidden;
             transform: translateY(-50%);
+        }
+
+        &.slide-left {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(10rem);
         }
     }
 
