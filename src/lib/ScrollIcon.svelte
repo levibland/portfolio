@@ -1,8 +1,12 @@
 <script lang="ts">
+    let loading: boolean = true;
 
+    setTimeout(() => {
+        loading = false;
+    }, 500);
 </script>
 
-<div class="scroll-icon">
+<div class="scroll-icon {loading ? "pop-in" : ""}">
     <span class="wheel"></span>
 </div>
 
@@ -18,6 +22,15 @@
         margin-top: 7rem;
         position: relative;
         cursor: pointer;
+        transition: all 350ms $primary-cubic-bezier;
+        opacity: 1;
+        visibility: visible;
+
+        &.pop-in {
+            transform: scale(0);
+            visibility: hidden;
+            opacity: 0;
+        }
 
         & .wheel {
             position: absolute;

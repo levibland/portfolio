@@ -54,7 +54,7 @@
         width: 4.2rem;
         cursor: pointer;
         opacity: 1;
-        transition: all 300ms ease-out;
+        transition: all 300ms $primary-cubic-bezier;
         visibility: visible;
 
         @media only screen and (min-width: 120em) {
@@ -62,6 +62,7 @@
         }
 
         &.slide-left {
+            transform: translateX(5rem);
             visibility: hidden;
             opacity: 0;
         }
