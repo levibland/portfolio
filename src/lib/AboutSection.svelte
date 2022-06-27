@@ -13,14 +13,14 @@
     <div class="wrapper">
         <PrimaryHeader />
         <PrimarySub />
-        <Button text="My Portfolio" />
+        <Button text="My Portfolio" fade={400} />
         <ScrollIcon />
         <AureliusQuote />
-        <SectionTitle text="Skills" />
-        <Cards />
-        <SectionTitle text="Socials" />
-        <Cards />
-        <Button text="My Portfolio" />
+        <SectionTitle text="Skills" show={850} />
+        <Cards fade={930} />
+        <SectionTitle text="Socials" show={1550} />
+        <Cards fade={1630} />
+        <Button text="My Portfolio" fade={4000} />
         <div class="buffer"></div>
     </div>
     <Footer />

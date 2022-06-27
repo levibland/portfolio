@@ -1,11 +1,13 @@
 <script lang="ts">
     import Card from './Card.svelte';
+
+    export let fade: number;
 </script>
 
 <div class="cards">
-    <Card text="test" />
-    <Card text="test" />
-    <Card text="test" />
+    <Card text="test" fade={fade} />
+    <Card text="test" fade={fade} />
+    <Card text="test" fade={fade} />
 </div>
 
 <style lang="scss">

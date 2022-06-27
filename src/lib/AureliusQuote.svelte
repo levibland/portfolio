@@ -24,7 +24,7 @@
     <span class="quote {y <= 500 ? "slide-right" : y >= 800 ? "slide-right" : ""}">
         "A man's worth is no greater than his ambitions." - 
     </span>
-    <span class="pink-text {y <= 550 ? "slide-left" : y >= 800 ? "slide-left" : ""}">
+    <span class="pink-text {y <= 500 ? "slide-left" : y >= 800 ? "slide-left" : ""}">
         &nbsp;Marcus Aurelius
     </span>
 </div>

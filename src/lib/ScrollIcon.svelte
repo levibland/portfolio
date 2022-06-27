@@ -11,12 +11,19 @@
 
 <svelte:window bind:scrollY={y} />
 
+<a href="#quote" id="quote">
 <div class="scroll-icon {loading ? "pop-in" : ""} {y >= 475 ? "pop-out" : ""}">
     <span class="wheel"></span>
 </div>
+</a>
 
 <style lang="scss">
     @import '../styles/vars.scss';
+
+    #quote {
+        text-decoration: none;
+        color: transparent;
+    }
 
     .scroll-icon {
         width: 4rem;
@@ -26,10 +33,14 @@
         border-radius: 5rem;
         margin-top: 7rem;
         position: relative;
-        cursor: default;
+        cursor: pointer;
         transition: all 350ms $primary-cubic-bezier;
         opacity: 1;
         visibility: visible;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         &.pop-in {
             transform: scale(0);

@@ -32,6 +32,7 @@
   :global(html) {
     height: 100%;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     @media only screen and (max-width: 62.5em) {
         font-size: 55.5%;

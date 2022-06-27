@@ -2,6 +2,7 @@
     import { Link } from "svelte-routing";
 
     export let text: String;
+    export let fade: number;
 
     let loading: boolean = true;
 
@@ -16,7 +17,7 @@
 <svelte:window bind:scrollY={y} />
 
 <Link to="/">
-    <div class="button-link {loading ? "slide-up" : ""} {y >= 400 ? "rotate-right" : ""}">
+    <div class="button-link {loading ? "slide-up" : ""} {y >= fade ? "rotate-right" : ""}">
         <button class="button-top">{text}</button>
         <button class="button-bottom">{text}</button>
     </div>
