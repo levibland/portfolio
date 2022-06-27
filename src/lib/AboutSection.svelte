@@ -18,7 +18,7 @@
         <AureliusQuote />
         <SectionTitle text="Skills" />
         <Cards />
-        <SectionTitle text="Contact Me" />
+        <SectionTitle text="Socials" />
         <Cards />
         <Button text="My Portfolio" />
         <div class="buffer"></div>
