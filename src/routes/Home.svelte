@@ -3,11 +3,13 @@
     import AboutSection from "../lib/AboutSection.svelte";
 </script>
 
-<div>
+<div class="wrapper">
     <Navbar />
     <AboutSection />
 </div>
 
 <style lang="scss">
-
+    .wrapper {
+        position: relative;
+    }
 </style>

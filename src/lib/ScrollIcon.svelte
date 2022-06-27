@@ -17,6 +17,7 @@
         border-radius: 5rem;
         margin-top: 7rem;
         position: relative;
+        cursor: pointer;
 
         & .wheel {
             position: absolute;
