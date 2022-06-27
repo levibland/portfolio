@@ -1,11 +1,13 @@
 <script lang="ts">
     import PrimaryHeader from './PrimaryHeader.svelte';
     import PrimarySub from './PrimarySub.svelte';
+    import Button from './Button.svelte';
 </script>
 
 <main class="about">
     <PrimaryHeader />
     <PrimarySub />
+    <Button text="My Portfolio" />
 </main>
 
 <style lang="scss">
