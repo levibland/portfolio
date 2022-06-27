@@ -21,6 +21,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        letter-spacing: 0.225rem;
 
         & .underline {
             display: block;
