@@ -25,7 +25,7 @@
         opacity: 1;
         visibility: visible;
         transform-origin: 50% 100%;
-        transition: all 300ms ease-out;
+        transition: all 300ms $primary-cubic-bezier;
 
         @media only screen and (max-width: 62.5em) {
             font-size: 8rem;

@@ -7,7 +7,7 @@
 
     setTimeout(() => {
         loading = false;
-    }, 400);
+    }, 350);
 </script>
 
 <Link to="/">
@@ -31,7 +31,7 @@
         opacity: 1;
         visibility: visible;
         transform-origin: 50% 100%;
-        transition: all 300ms ease-out;
+        transition: all 300ms $primary-cubic-bezier;
 
         * {
             transition: all 150ms;
