@@ -51,7 +51,7 @@
 
     .sub-word-bottom {
         visibility: hidden;
-        color: $hot-pink;
+        color: #5b6570;
 
         .sub-word.active & {
             visibility: visible;

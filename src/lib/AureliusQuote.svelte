@@ -20,7 +20,7 @@
         //margin-bottom: 25rem !important;
         margin: auto;
         width: 70rem;
-        height: 45rem;
+        height: 40rem;
     }
 
     .quote {
