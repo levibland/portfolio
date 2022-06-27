@@ -21,7 +21,7 @@
         border-radius: 5rem;
         margin-top: 7rem;
         position: relative;
-        cursor: pointer;
+        cursor: default;
         transition: all 350ms $primary-cubic-bezier;
         opacity: 1;
         visibility: visible;
