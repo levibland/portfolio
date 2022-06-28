@@ -20,7 +20,7 @@
     </div>
 </h1>-->
 
-<div class="wrapper {y <= 500 ? "slide-in" : y >= 800 ? "slide-in2" : ""}">
+<div class="wrapper {y <= 400 ? "slide-in" : y >= 900 ? "slide-in2" : ""}">
     <span class="quote">
         "A man's worth is no greater than his ambitions." - 
     </span>
