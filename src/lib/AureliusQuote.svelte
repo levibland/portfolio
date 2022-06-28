@@ -20,11 +20,11 @@
     </div>
 </h1>-->
 
-<div class="wrapper">
-    <span class="quote {y <= 500 ? "slide-right" : y >= 800 ? "slide-right" : ""}">
+<div class="wrapper {y <= 500 ? "slide-up" : y >= 800 ? "slide-up2" : ""}">
+    <span class="quote">
         "A man's worth is no greater than his ambitions." - 
     </span>
-    <span class="pink-text {y <= 500 ? "slide-left" : y >= 800 ? "slide-left" : ""}">
+    <span class="pink-text">
         &nbsp;Marcus Aurelius
     </span>
 </div>
@@ -42,35 +42,25 @@
         color: $gray;
         font-family: $display-font;
         display: block;
+        transition: all 400ms ease-in-out;
+        opacity: 1;
+        visibility: visible;
 
-        span {
-            position: relative;
+        &.slide-up {
+            transform: translateY(10rem);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &.slide-up2 {
+            transform: translateY(-10rem);
+            visibility: hidden;
+            opacity: 0;
         }
 
         & .pink-text {
             font-family: $primary-font;
             color: $hot-pink;
-            transition: all 400ms ease-in-out;
-            opacity: 1;
-            visibility: visible;
-
-            &.slide-left {
-                transform: translateX(10rem);
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-
-        & .quote {
-            transition: all 400ms ease-in-out;
-            opacity: 1;
-            visibility: visible;
-
-            &.slide-right {
-                transform: translateX(-10rem);
-                opacity: 0;
-                visibility: hidden;
-            }
         }
     }
 
