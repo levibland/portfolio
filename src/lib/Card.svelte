@@ -1,6 +1,9 @@
 <script lang="ts">
     export let text: String;
     export let fade: number;
+    export let imgPath: string;
+    export let gradient: string;
+    export let shadowColor: string;
 
     // Scroll animation
     let y: number;
@@ -8,8 +11,9 @@
 
 <svelte:window bind:scrollY={y} />
 
-<div class="card {y <= fade ? "animate" : y >= fade + 450 ? "animate-opposite" : ""}">
-
+<div class="card {y <= fade ? "animate" : y >= fade + 450 ? "animate-opposite" : ""}" style="--gradient:{gradient};--shadowColor:{shadowColor};">
+    <img class="card-img" src={imgPath} alt="Logo" />
+    {text}
 </div>
 
 <style lang="scss">
@@ -18,13 +22,26 @@
     .card {
         width: 30rem;
         height: 35rem;
-        background: $gray;
+        background: var(--gradient);
+        box-shadow: var(--shadowColor);
         border-radius: 40px;
         margin-left: 25px;
         margin-right: 25px;
         transition: all 300ms ease-in-out;
         visibility: visible;
         opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 4rem;
+
+        & .card-img {
+            width: auto;
+            height: 10rem;
+            margin-bottom: 3rem;
+        }
 
         &:hover {
             transform: scale(1.05);
