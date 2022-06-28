@@ -1,5 +1,7 @@
 <script lang="ts">
-    import { fly } from 'svelte/transition';
+    export let quote: string;
+    export let name: string;
+
     let y: number;
 </script>
 
@@ -22,10 +24,10 @@
 
 <div class="wrapper {y <= 400 ? "slide-in" : y >= 900 ? "slide-in2" : ""}">
     <span class="quote">
-        "A man's worth is no greater than his ambitions." - 
+        {quote} 
     </span>
-    <span class="pink-text">
-        &nbsp;Marcus Aurelius
+    <span class="pink-text {y >= 500 ? "fade-in" : ""}">
+        &nbsp;{name}
     </span>
 </div>
 
@@ -46,7 +48,7 @@
         opacity: 1;
         visibility: visible;
 
-        &.slide-in {
+        /*&.slide-in {
             transform: translateX(-20rem);
             visibility: hidden;
             opacity: 0;
@@ -56,7 +58,7 @@
             transform: translateX(20rem);
             visibility: hidden;
             opacity: 0;
-        }
+        }*/
 
         & .pink-text {
             font-family: $primary-font;
