@@ -4,6 +4,8 @@
     export let imgPath: string;
     export let gradient: string;
     export let shadowColor: string;
+    export let cursor: string;
+    export let link: string;
 
     // Scroll animation
     let y: number;
@@ -11,13 +13,18 @@
 
 <svelte:window bind:scrollY={y} />
 
-<div class="card {y <= fade ? "animate" : y >= fade + 450 ? "animate-opposite" : ""}" style="--gradient:{gradient};--shadowColor:{shadowColor};">
+
+<a href={link} class="card {y <= fade ? "animate" : y >= fade + 450 ? "animate-opposite" : ""}" style="--gradient:{gradient};--shadowColor:{shadowColor};--cursor:{cursor};">
     <img class="card-img" src={imgPath} alt="Logo" />
     {text}
-</div>
+</a>
 
 <style lang="scss">
     @import '../styles/vars.scss';
+
+    a {
+        display: block;
+    }
 
     .card {
         width: 30rem;
@@ -31,6 +38,7 @@
         visibility: visible;
         opacity: 1;
         display: flex;
+        cursor: var(--cursor);
         flex-direction: column;
         align-items: center;
         justify-content: center;
