@@ -51,6 +51,10 @@
         @media only screen and (max-width: 44.375em) {
             font-size: 2rem;
         }
+
+        @media only screen and (max-width: 31.275em) {
+            font-size: 1.75rem;
+        }
     }
 
     .line-wrapper {

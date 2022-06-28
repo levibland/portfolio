@@ -32,6 +32,7 @@
         visibility: visible;
         transform-origin: 50% 100%;
         transition: all 300ms ease-in-out;
+        width: 100%;
 
         @media only screen and (max-width: 62.5em) {
             font-size: 8rem;
@@ -43,6 +44,8 @@
         }
 
         @media only screen and (max-width: 31.25em) {
+            font-size: 4.5rem;
+            letter-spacing: .3rem;
             span {
                 display: block;
             }

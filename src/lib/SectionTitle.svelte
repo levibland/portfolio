@@ -43,6 +43,12 @@
                 transform: translateY(10rem);
                 visibility: hidden;
                 opacity: 0;
+
+                @media only screen and (max-width: 60em) {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translate(0, 0);
+                }
             }
         }
     }
@@ -59,6 +65,12 @@
             transform: translateY(-5rem);
             opacity: 0;
             visibility: hidden;
+
+            @media only screen and (max-width: 60em) {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(0, 0);
+            }
         }
     }
 </style>

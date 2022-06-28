@@ -37,6 +37,14 @@
         color: $white;
         font-size: 4rem;
 
+        @media only screen and (max-width: 60em) {
+            margin-bottom: 5rem;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
         & .card-img {
             width: auto;
             height: 10rem;
@@ -51,36 +59,72 @@
             transform: translateX(-5rem);
             opacity: 0;
             visibility: hidden;
+            
+            @media only screen and (max-width: 60em) {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+            }
         }
 
         &:nth-child(3).animate {
             transform: translateX(5rem);
             opacity: 0;
             visibility: hidden;
+
+            @media only screen and (max-width: 60em) {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+            }
         }
 
         &:nth-child(2).animate {
             transform: translateY(8rem);
             opacity: 0;
             visibility: hidden;
+            
+            @media only screen and (max-width: 60em) {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+            }
         }
 
         &:nth-child(1).animate-opposite {
             transform: translateX(-5rem);
             opacity: 0;
             visibility: hidden;
+
+            @media only screen and (max-width: 60em) {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+            }
         }
 
         &:nth-child(3).animate-opposite {
             transform: translateX(5rem);
             opacity: 0;
             visibility: hidden;
+            
+            @media only screen and (max-width: 60em) {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+            }
         }
 
         &:nth-child(2).animate-opposite {
             transform: translateY(-8rem);
             opacity: 0;
             visibility: hidden;
+            
+            @media only screen and (max-width: 60em) {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+            }
         }
     }
 </style>

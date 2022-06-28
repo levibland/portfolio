@@ -11,6 +11,7 @@
 
     export let fade: number;
     export let props: CardProps;
+
 </script>
 
 <div class="cards">
@@ -26,5 +27,9 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 25rem;
+
+        @media only screen and (max-width: 60em) {
+            flex-direction: column;
+        }
     }
 </style>

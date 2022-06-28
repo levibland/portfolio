@@ -48,6 +48,10 @@
         opacity: 1;
         visibility: visible;
 
+        @media only screen and (max-width: 35em) {
+            font-size: 3rem;
+        }
+
         /*&.slide-in {
             transform: translateX(-20rem);
             visibility: hidden;
