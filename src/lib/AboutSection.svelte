@@ -12,6 +12,9 @@
     import Tslogo from '../assets/tslogo.png';
     import Rustlogo from '../assets/rustlogo.png';
     import Reactlogo from '../assets/reactlogo.png';
+    import Githublogo from '../assets/githublogo.png';
+    import Linkedinlogo from '../assets/linkedinlogo.png';
+    import Resumelogo from '../assets/resumelogo.png';
 
     let quote1 = "\"A man's worth is no greater than his ambitions.\" - ";
     let quote2 = "\"If a man knows not which port he sails, no wind is favorable.\" - ";
@@ -27,8 +30,8 @@
         <SectionTitle text="Skills" show={850} />
         <Cards fade={930} props={{ cardTexts: ["TypeScript", "Rust", "React"], cardImgs: [Tslogo, Rustlogo, Reactlogo], cardGradients: ["linear-gradient(15deg, #11998e, #38ef7d)", "linear-gradient(15deg, #396afc, #2948ff)", "linear-gradient(15deg, #7f00ff, #e100ff)"], cardShadowColors: ["rgb(17 153 142 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px", "rgb(57 106 252 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px", "rgb(127 0 255 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px"] }} />
         <AureliusQuote quote={quote2} name="Seneca" />
-        <SectionTitle text="Socials" show={1950} />
-        <Cards fade={2030} props={{ cardTexts: ["TypeScript", "Test", "Test"], cardImgs: [Tslogo, Rustlogo, Reactlogo], cardGradients: ["linear-gradient(15deg, #11998e, #38ef7d)", "linear-gradient(15deg, #7f00ff, #e100ff)", "linear-gradient(15deg, #396afc, #2948ff)"], cardShadowColors: ["rgb(17 153 142 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px", "rgb(127 0 255 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px", "rgb(57 106 252 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px"] }} />
+        <SectionTitle text="Info" show={1950} />
+        <Cards fade={2030} props={{ cardTexts: ["Github", "Linkedin", "Resume"], cardImgs: [Githublogo, Linkedinlogo, Resumelogo], cardGradients: ["linear-gradient(15deg, #0052d4, #4364f7, #6fb1fc)", "linear-gradient(15deg, #eb3349, #f45c43)", "linear-gradient(15deg, #8e2de2, #4a00e0)"], cardShadowColors: ["rgb(0 82 212 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px", "rgb(235 51 73 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px", "rgb(142 45 226 / 30%) 0px 20px 40px, rgb(0 0 0 / 5%) 0px 1px 3px"] }} />
         <div class="buffer"></div>
     </div>
     <Footer />
