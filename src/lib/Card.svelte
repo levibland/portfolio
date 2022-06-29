@@ -88,7 +88,7 @@
         }
 
         &:nth-child(2).animate {
-            transform: translateY(8rem);
+            transform: scale(0.75);
             opacity: 0;
             visibility: hidden;
             
@@ -124,7 +124,7 @@
         }
 
         &:nth-child(2).animate-opposite {
-            transform: translateY(-8rem);
+            transform: scale(0.75);
             opacity: 0;
             visibility: hidden;
             
