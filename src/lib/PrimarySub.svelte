@@ -10,7 +10,6 @@
 
     // Scroll animation
     let y: number;
-    $: console.log(y);
 </script>
 
 <svelte:window bind:scrollY={y} />
