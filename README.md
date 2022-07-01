@@ -1,5 +1,5 @@
 # Portfolio
-My personal site built with Svelte (converted from React)
+My personal site built with Svelte
 
 ## Developing
 This project uses Yarn, you will need to install it.
