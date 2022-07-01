@@ -15,7 +15,7 @@
     export let props: CardProps;
 
     let cursor = props.info ? "pointer" : "default";
-    let links = props.links != null ? props.links : ["/", "/", "/"]
+    let links = props.links != null ? props.links : [" ", " ", " "]
 
 </script>
 

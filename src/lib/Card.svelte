@@ -42,7 +42,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: $white;
+        color: $mid-dark;
         font-size: 4rem;
 
         @media only screen and (max-width: 60em) {
